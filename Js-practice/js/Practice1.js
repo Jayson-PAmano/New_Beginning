@@ -81,3 +81,4 @@ console.log("Color Reverse:");
 for (i = colors.length - 1; i >= 0; i--) {
   console.log(i + colors[i]);
 }
+console.log(getName("jaden"));
