@@ -6,7 +6,7 @@ const numbers3 = [23, 15, 34, 25, 55];
 const result = [];
 
 for (let i = 0; i < numbers.length; i++) {
-  if (numbers[i] > 5) {
+  if (numbers[i] >= 5) {
     result.push(numbers[i]);
   }
 }
@@ -24,3 +24,5 @@ const result3 = numbers3.filter((value) => {
   return value > 23;
 });
 console.log(result3);
+
+const
