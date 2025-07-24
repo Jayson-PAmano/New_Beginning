@@ -150,6 +150,12 @@ const teams = {
   T3: "LAC",
 };
 
+const Teams = {
+  callTeams: () => {
+    console.log(`Teams:\n ${teams.T1} \n ${teams.T2} \n ${teams.T3}`);
+  },
+};
+
 //Loop Objects
 for (let key in cars) {
   // console.log(`${key}: ${cars[key]}`);
@@ -159,3 +165,15 @@ for (let key in cars) {
 for (let index of fruits) {
   console.log(`Favorite fruit: ${index}`);
 }
+console.log("\n");
+// for (let i = 0; i < person.length; i++) {
+//   console.log(`Name: ${person[i].firstName}\n Age: ${person[i].age}`);
+// }
+person.forEach((element, index) => {
+  console.log(`${index} Name: ${element.firstName}\n Age: ${element.age}`);
+});
+
+console.log("\n");
+city.callCities();
+console.log("\n");
+Teams.callTeams.call(teams);
