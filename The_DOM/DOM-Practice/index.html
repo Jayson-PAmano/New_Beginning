@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM-Practice</title>
+    <style>
+      /* body {
+        font-family: Arial, sans-serif;
+        background-color: #f0f4f8;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 50vh;
+        margin: 0;
+      } */
+      /* #textboxForm {
+        background: white;
+        padding: 20px 30px;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        display: flex;
+        gap: 10px;
+      } */
+      input[type="text"] {
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        font-size: 16px;
+        flex-grow: 1;
+      }
+      button {
+        background-color: #007bff;
+        border: none;
+        color: white;
+        padding: 10px 20px;
+        font-size: 16px;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+      button:hover {
+        background-color: #0056b3;
+      }
+    </style>
+  </head>
+  <body>
+    <form id="textboxForm">
+      <input
+        type="text"
+        id="textbox"
+        name="textbox"
+        placeholder="Enter text here"
+      />
+      <button type="button">Submit</button>
+    </form>
+    <p
+      id="displayText"
+      style="margin-top: 15px; font-size: 18px; color: #333"
+    ></p>
+    <hr />
+    <h1>0</h1>
+    <button type="button" id="addNum">Submit</button>
+    <script src="dom1.js"></script>
+  </body>
+</html>
