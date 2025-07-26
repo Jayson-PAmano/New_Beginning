@@ -7,60 +7,15 @@ let counter2 = 5;
 
 let numbers = [1, 2, 3, 4];
 let numbers2 = [21, 32, 13, 54];
+let Highnumbers = [521, 232, 313, 154];
 let squaredNum = [];
+let squaredNum2 = [];
 let Results = [];
 
 const letters = ["a", "b", "c", "d"];
 const letters2 = ["e", "f", "g", "h"];
 const letters3 = ["i", "j", "k", "l"];
 const letters4 = ["m", "n", "o", "p"];
-
-// Objects
-
-const person = [
-  {
-    firstName: "John",
-    age: 35,
-    favColor: "blue,",
-  },
-  {
-    firstName: "Joe",
-    age: 33,
-    favColor: "red,",
-  },
-  {
-    firstName: "Jimmy",
-    age: 31,
-    favColor: "green,",
-  },
-];
-
-const cars = {
-  Car1: "Toyota - 2019",
-  Car2: "Nissan - 2012",
-  Car3: "Honda - 2016",
-};
-
-const city = {
-  No1: "New York",
-  No2: "Los Angeles",
-  No3: "Dallas",
-  callCities: () => {
-    console.log(`Cities:\n ${city.No1} \n ${city.No2} \n ${city.No3}`);
-  },
-};
-
-const teams = {
-  T1: "GSW",
-  T2: "PHX",
-  T3: "LAC",
-};
-
-const Teams = {
-  callTeams: () => {
-    console.log(`Teams:\n ${teams.T1} \n ${teams.T2} \n ${teams.T3}`);
-  },
-};
 
 //functions
 
@@ -163,3 +118,109 @@ for (let i = colors.length - 1; i >= 0; i--) {
 //     console.log("Sorry, you are not jaden");
 //   }
 // }
+
+for (let i = 0; i < letters.length; i++) {
+  getLetters(letters[i], i);
+}
+function getLetters(element, index) {
+  console.log(element, index);
+}
+console.log("\n");
+
+for (let i = 0; i < numbers.length; i++) {
+  squaredNum[i] = numbers[i] * numbers[i];
+  squaredNum2[i] = numbers[i] * numbers[i] * 2;
+}
+console.log(squaredNum);
+console.log(squaredNum2);
+
+for (let i = 0; i < numbers2.length; i++) {
+  if (numbers2[i] <= 21) {
+    console.log(numbers2[i]);
+  }
+}
+
+// Objects
+
+const person = [
+  {
+    firstName: "John",
+    age: 35,
+    favColor: "blue,",
+  },
+  {
+    firstName: "Joe",
+    age: 33,
+    favColor: "red,",
+  },
+  {
+    firstName: "Jimmy",
+    age: 31,
+    favColor: "green,",
+  },
+];
+
+const cars = {
+  Car1: "Toyota - 2019",
+  Car2: "Nissan - 2012",
+  Car3: "Honda - 2016",
+};
+
+const city = {
+  No1: "New York",
+  No2: "Los Angeles",
+  No3: "Dallas",
+  callCities: () => {
+    console.log(`Cities:\n ${city.No1} \n ${city.No2} \n ${city.No3}`);
+  },
+};
+
+const teams = {
+  T1: "GSW",
+  T2: "PHX",
+  T3: "LAC",
+};
+
+const Teams = {
+  callTeams: () => {
+    console.log(`Teams:\n ${teams.T1} \n ${teams.T2} \n ${teams.T3}`);
+  },
+};
+//Looping Objects
+
+for (let i = 0; i < person.length; i++) {
+  console.log(`Name: ${person[i].firstName}`);
+}
+city.callCities();
+Teams.callTeams.call(teams);
+
+//for in.....
+for (const key in person) {
+  console.log(
+    `${person[key].firstName} is ${person[key].age} years old and likes ${person[key].favColor}`
+  );
+}
+for (keys in colors) {
+  console.log(`${keys}: ${colors[keys]}`);
+}
+console.log("\n");
+//for of....
+for (team in teams) {
+  console.log(`${team}: ${teams[team]}`);
+}
+
+//ForEach
+console.log("\n");
+fruits.forEach((element, index) => {
+  console.log(`${index}: ${element}`);
+});
+
+const sqrt = Highnumbers.map((value) => {
+  console.log(Math.round(Math.sqrt(value)));
+});
+// console.log(sqrt);
+
+const filterdNum = numbers2.filter((value) => {
+  return value >= 32;
+});
+console.log(filterdNum);

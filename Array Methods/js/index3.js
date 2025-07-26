@@ -25,4 +25,7 @@ const result3 = numbers3.filter((value) => {
 });
 console.log(result3);
 
-const
+const result4 = numbers.filter((value) => {
+  return value >= 5;
+});
+console.log(result4);
