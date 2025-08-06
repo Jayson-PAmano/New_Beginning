@@ -36,6 +36,56 @@ let produce = {
     { name: "potato", type: "vegetable" },
   ],
 };
+
+let Fruits = {
+  name: "Apple",
+  color: "Red",
+  weight: "150g",
+  isRipe: true,
+};
+const nbaTeams = {
+  Lakers: {
+    city: "Los Angeles",
+    state: "CA",
+    arena: "Staples Center",
+  },
+  Celtics: {
+    city: "Boston",
+    state: "MA",
+    arena: "TD Garden",
+  },
+  Bulls: {
+    city: "Chicago",
+    state: "IL",
+    arena: "United Center",
+  },
+  Warriors: {
+    city: "San Francisco",
+    state: "CA",
+    arena: "Chase Center",
+  },
+  Rockets: {
+    city: "Houston",
+    state: "TX",
+    arena: "Toyota Center",
+  },
+  getTeams: () => {
+    // for (let team in nbaTeams) {
+    //   console.log(
+    //     `${team} is located in ${nbaTeams[team].city}, ${nbaTeams[team].state} at the ${nbaTeams[team].arena}.`
+    //   );
+    // }
+    // Object.keys(nbaTeams).forEach((team) => {
+    //   if (typeof nbaTeams[team] === "object" && nbaTeams[team].city) {
+    //     console.log(
+    //       `${team} is located in ${nbaTeams[team].city}, ${nbaTeams[team].state} at the ${nbaTeams[team].arena}.`
+    //     );
+    //   }
+    // });
+    console.log(`NBA Teams: ${nbaTeams.Lakers.city}`);
+  },
+};
+nbaTeams.getTeams();
 /*** Start Here....***/
 
 //functions
