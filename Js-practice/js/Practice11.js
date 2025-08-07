@@ -17,26 +17,79 @@ const letters2 = ["e", "f", "g", "h"];
 const letters3 = ["i", "j", "k", "l"];
 const letters4 = ["m", "n", "o", "p"];
 let animals = [
-  { name: "Dog", type: "Mammal", sound: "Bark" },
-  { name: "Cat", type: "Mammal", sound: "Meow" },
-  { name: "Parrot", type: "Bird", sound: "Squawk" },
-  { name: "Goldfish", type: "Fish", sound: "Blub" },
-  { name: "Frog", type: "Amphibian", sound: "Ribbit" },
+  {
+    name: "Dog",
+    type: "Mammal",
+    sound: "Bark",
+  },
+
+  {
+    name: "Cat",
+    type: "Mammal",
+    sound: "Meow",
+  },
+  {
+    name: "Parrot",
+    type: "Bird",
+    sound: "Squawk",
+  },
+  {
+    name: "Goldfish",
+    type: "Fish",
+    sound: "Blub",
+  },
+  {
+    name: "Frog",
+    type: "Amphibian",
+    sound: "Ribbit",
+  },
 ];
+// for (a in animals) {
+//   console.log(
+//     `${animals[a].name} is a ${animals[a].type} and it makes a ${animals[a].sound} sound.`
+//   );
+// }
 let produce = {
   fruits: [
-    { name: "apple", type: "fruit" },
-    { name: "orange", type: "fruit" },
-    { name: "grapes", type: "fruit" },
+    {
+      name: "apple",
+      type: "fruit",
+    },
+    {
+      name: "orange",
+      type: "fruit",
+    },
+    {
+      name: "grapes",
+      type: "fruit",
+    },
   ],
   vegetables: [
-    { name: "carrot", type: "vegetable" },
-    { name: "broccoli", type: "vegetable" },
-    { name: "spinach", type: "vegetable" },
-    { name: "potato", type: "vegetable" },
+    {
+      name: "carrot",
+      type: "vegetable",
+    },
+    {
+      name: "broccoli",
+      type: "vegetable",
+    },
+    {
+      name: "spinach",
+      type: "vegetable",
+    },
+    {
+      name: "potato",
+      type: "vegetable",
+    },
   ],
 };
+for (let category in produce) {
+  console.log(`Category: ${category}`);
 
+  for (let item of produce[category]) {
+    console.log(`- ${item.name} (${item.type})`);
+  }
+}
 let Fruits = {
   name: "Apple",
   color: "Red",
