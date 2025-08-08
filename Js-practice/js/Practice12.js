@@ -59,9 +59,60 @@ const Country = {
 };
 //Start here....
 
-let response;
+Sum = (n1, n2) => n1 + n2;
+getSum = () => console.log(Sum(5, 5));
+getSum();
 
-//1 Functions
+doubleSum = (a, b) => {
+  let dblSum = Sum(a, b) ** 2;
+
+  return dblSum;
+
+  // let sqrt = Math.sqrt(dblSum);
+  // return sqrt;
+};
+console.log(doubleSum(5, 5));
+console.log(
+  "Square root of " + doubleSum(5, 5) + " is " + Math.sqrt(doubleSum(5, 5))
+);
+
+while (counter <= 5) {
+  console.log(counter);
+  counter++;
+}
+console.log("\n");
+
+while (counter2 >= 0) {
+  console.log(counter2);
+  counter2--;
+}
+
+console.log("\n");
+
+for (let i = 0; i < colors.length; i++) {
+  console.log(i + colors[i]);
+}
+
+console.log("\n");
+
+for (let i = colors.length - 1; i >= 0; i--) {
+  console.log(i + colors[i]);
+}
+
+console.log("\n");
+
+for (let i = 0; i < text.length; i++) {
+  console.log(i + ". " + text.charAt(i));
+  let getLetters = prompt("Enter letter");
+  // if (getLetters === text.charAt(i)) {
+  //   console.log("Correct");
+  // } else {
+  //   console.log("Incorrect");
+  // }
+}
+//1 Using A.i
+// let response;
+
 // getName = (name) => {
 
 //   while (name !== "Jaden") {
@@ -109,7 +160,7 @@ let response;
 //
 // };
 
-let output = document.querySelector("h2");
+// let output = document.querySelector("h2");
 // AddNum = () => {
 //   let num1 = prompt("Enter first number: ");
 //   let num2 = prompt("Enter second number: ");
@@ -145,27 +196,80 @@ let output = document.querySelector("h2");
 // };
 // AddNum();
 
-number = (myNumber) => {
-  while (myNumber !== 13) {
-    myNumber = prompt("Enter your number: ");
-    if (myNumber === "") {
-      alert("Please, do not leave empty");
-      response = "Please, do not leave empty";
-    } else if (myNumber <= 10) {
-      alert("Number must not be lower than 13");
-      response = "Number must not be lower than 13";
-    } else if (myNumber >= 15) {
-      alert("Number must not be higher than 15");
-      response = "Number must not be higher than 15";
-    } else {
-      alert(`You enter ${myNumber} favorite`);
-      response = `You enter ${myNumber} favorite`;
-    }
-    break;
-  }
-  console.log(response);
-};
-number();
+// number = (myNumber) => {
+//   while (myNumber !== 13) {
+//     myNumber = prompt("Enter your number: ");
+//     if (myNumber === "") {
+//       alert("Please, do not leave empty");
+//       response = "Please, do not leave empty";
+//     } else if (myNumber <= 10) {
+//       alert("Number must not be lower than 13");
+//       response = "Number must not be lower than 13";
+//     } else if (myNumber >= 15) {
+//       alert("Number must not be higher than 15");
+//       response = "Number must not be higher than 15";
+//     } else {
+//       alert(`You enter ${myNumber} favorite`);
+//       response = `You enter ${myNumber} favorite`;
+//     }
+//     break;
+//   }
+//   console.log(response);
+// };
+// number();
+
+// const getRemainder = () => {
+//   let name = "";
+//   while (name === "") {
+//     name = prompt("What is your name:");
+//     if (name === "") {
+//       alert("Please enter your name.");
+//     }
+//   }
+
+//   let number;
+//   while (true) {
+//     let input = prompt("Enter your number:");
+//     number = parseInt(input);
+
+//     if (isNaN(number)) {
+//       alert("Please enter a number.");
+//     } else {
+//       break;
+//     }
+//   }
+
+//   if (number % 2 === 0) {
+//     alert(`The number ${number} is Even`);
+//     console.log(`The number ${number} is Even`);
+//   } else {
+//     alert(`The number ${number} is Odd`);
+//     console.log(`The number ${number} is Odd`);
+//   }
+// };
+
+// getRemainder();
+
+// const incrementNum = () => {
+//   let start = Number(prompt("Enter the starting number:"));
+//   let end = Number(prompt("Enter the ending number:"));
+
+//   if (isNaN(start) || isNaN(end)) {
+//     alert("Please enter valid numbers.");
+//     return;
+//   }
+
+//   while (start <= end) {
+//     console.log(start);
+//     start++;
+//   }
+//   while (start >= end) {
+//     console.log(start);
+//     start--;
+//   }
+// };
+
+// incrementNum();
 
 // function getCarDetails() {
 //   return `The ${Cars.Toyota.model} was made in ${Cars.Toyota.made_in} in the year ${Cars.Toyota.year}`;
