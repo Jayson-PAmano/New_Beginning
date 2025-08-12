@@ -11,6 +11,20 @@ let numbers2 = [21, 32, 13, 54];
 const letters = ["a", "b", "c", "d"];
 const letters2 = ["e", "f", "g", "h"];
 
+//forEach
+
+// colors.forEach((Element, Index) => {
+//   // console.log(Index, Element);
+// });
+
+let btn = (document.querySelector("button").onclick = () => {
+  colors.forEach((Element, Index) => {
+    document.querySelector(
+      "p"
+    ).innerHTML = `Index: ${Index}\n Color: ${Element[Index]} `;
+  });
+});
+
 // objects
 const Cars = {
   Toyota: [
@@ -45,13 +59,16 @@ const Person = [
   },
 ];
 
-// functions
+// // functions
 
-getName = (name) => console.log(`${name}`);
-getName("John, Jane");
+// getName = (name) => console.log(`${name}`);
+// getName("John, Jane");
 
-GreatName = () => {
-  getName(`Hello, nice to meet you both`);
-};
-GreatName();
-console.log(Cars.getCars());
+// GreatName = () => {
+//   getName(`Hello, nice to meet you both`);
+// };
+// GreatName();
+// console.log(Cars.getCars());
+// Person.forEach((element, index) => {
+//   console.log(Person[index].name);
+// });
