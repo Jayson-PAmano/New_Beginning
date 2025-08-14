@@ -13,16 +13,22 @@ const letters2 = ["e", "f", "g", "h"];
 
 //forEach
 
-// colors.forEach((Element, Index) => {
-//   // console.log(Index, Element);
-// });
+// function logLetters() {
+//   letters.forEach(function (letter) {
+//     console.log(letter);
+//   });
+// }
+// logLetters();
+for (let i = 0; i < letters.length; i++) {
+  logLetters(letters[i], i);
+}
+function logLetters(element, index) {
+  console.log(element, index);
+}
+console.log("\n");
 
-let btn = (document.querySelector("button").onclick = () => {
-  colors.forEach((Element, Index) => {
-    document.querySelector(
-      "p"
-    ).innerHTML = `Index: ${Index}\n Color: ${Element[Index]} `;
-  });
+letters2.forEach((e, i) => {
+  console.log(e, i);
 });
 
 // objects
@@ -58,6 +64,10 @@ const Person = [
     occupation: "Teacher",
   },
 ];
+
+Person.forEach((e, i) => {
+  console.log(`Name: ${e.name}`);
+});
 
 // // functions
 
