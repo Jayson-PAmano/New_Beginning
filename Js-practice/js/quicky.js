@@ -28,11 +28,19 @@ const Cars = {
       price: 22000,
     },
   ],
-  // getCars: () => {
-  //   console.log(`Car1: ${Toyota.name} \n Car2: ${Toyota.name}`);
-  // },
+  getCars: () => {
+    console.log(`Car1: ${Cars.Toyota[0].name} \nCar2: ${Cars.Honda[0].name}`);
+  },
 };
+/* 
+or.... if we want to use the function keyword
+getCars: function () { 
+    console.log(`Car1: ${this.Toyota[0].name} \nCar2: ${this.Honda[0].name}`);
+  },
+};
+* */
 
+Cars.getCars();
 const Person = [
   {
     name: "John",
@@ -77,8 +85,12 @@ console.log("\n");
 
 /*Using forEach with Array Object*/
 
-Person.forEach((element, index) => {
-  console.log(
-    `Id#. ${index}\n Car -> ${element.name} \n Age -> ${element.age}`
-  );
-});
+// Person.forEach((element, index) => {
+//   console.log(
+//     `Id#. ${index}\n Name -> ${element.name} \n Age -> ${element.age}`
+//   );
+// });
+
+for (i = 0; i < Person.length; i++) {
+  console.log(`Id#. ${i}\n Name -> ${Person[i].name} \n`);
+}
